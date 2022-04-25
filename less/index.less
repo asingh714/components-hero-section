@@ -1,0 +1,59 @@
+@import "reset.less";
+@import "variables.less";
+@import "global.less";
+
+body {
+  background-color: @light-grey;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  // justify-content: center;
+  padding: 3.2rem 4rem;
+  // border: 1px solid red;
+
+  .main-logo {
+    flex-grow: 1;
+    margin-right: 2rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 9;
+    // border: 1px solid purple;
+    .nav-links-container,
+    .nav-button-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links-container {
+      // border: 1px solid green;
+      justify-content: space-between;
+      // width: 80%;
+      // flex-grow: 2;
+      li {
+        margin-left: 4rem;
+      }
+    }
+
+    .nav-button-container {
+      // flex-grow: 1;
+      justify-content: space-between;
+      // border: 1px solid pink;
+      margin-left: auto;
+
+      .round-button {
+        margin-left: 6rem;
+      }
+    }
+
+    li,
+    .nav-button {
+      color: @medium-gray;
+      font-size: @small-text;
+    }
+  }
+}

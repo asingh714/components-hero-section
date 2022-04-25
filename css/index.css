@@ -1,0 +1,177 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Epilogue", sans-serif;
+}
+body {
+  background-color: #f2f2f2;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 3.2rem 4rem;
+  border: 1px solid red;
+}
+header .main-logo {
+  flex-grow: 1;
+  margin-right: 2rem;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 9;
+}
+header nav .nav-links-container,
+header nav .nav-button-container {
+  display: flex;
+  align-items: center;
+}
+header nav .nav-links-container {
+  justify-content: space-between;
+}
+header nav .nav-links-container li {
+  margin-left: 4rem;
+}
+header nav .nav-button-container {
+  justify-content: space-between;
+  margin-left: auto;
+}
+header nav .nav-button-container .round-button {
+  margin-left: 6rem;
+}
+header nav li,
+header nav .nav-button {
+  color: #686868;
+  font-size: 1.6rem;
+}
