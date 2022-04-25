@@ -89,3 +89,47 @@ header {
     }
   }
 }
+
+.main-container {
+  display: flex;
+  padding: 8rem 13rem;
+  justify-content: space-between;
+
+  .main-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+
+    h1 {
+      font-size: @large-text;
+      font-weight: bold;
+      color: @black;
+      border: 1px solid red;
+    }
+
+    span {
+      font-size: @medium-text;
+      color: @medium-gray;
+      line-height: 2;
+    }
+    .hero-button {
+      color: @black;
+      border: 1px solid @black;
+      border-radius: 10px;
+      padding: 1.5rem 2rem;
+      cursor: pointer;
+      font-size: @button-text;
+    }
+
+    .client-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .hero-image {
+    width: 45%;
+  }
+}
