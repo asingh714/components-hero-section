@@ -92,44 +92,58 @@ header {
 
 .main-container {
   display: flex;
-  padding: 8rem 13rem;
+  padding: 8rem 10rem;
   justify-content: space-between;
 
   .main-content-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
-    width: 50%;
+    width: 47.5%;
 
     h1 {
+      margin-top: auto;
+
       font-size: @large-text;
-      font-weight: bold;
+      font-weight: 700;
       color: @black;
-      border: 1px solid red;
     }
 
     span {
+      margin-top: auto;
+
       font-size: @medium-text;
+      font-weight: 500;
       color: @medium-gray;
       line-height: 2;
     }
     .hero-button {
-      color: @black;
+      margin-top: auto;
+
+      background-color: @black;
+      color: @white;
       border: 1px solid @black;
       border-radius: 10px;
       padding: 1.5rem 2rem;
       cursor: pointer;
       font-size: @button-text;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: @white;
+        color: @black;
+      }
     }
 
     .client-container {
+      margin-top: auto;
       width: 100%;
       display: flex;
       justify-content: space-between;
     }
   }
   .hero-image {
-    width: 45%;
+    width: 47.5%;
   }
 }

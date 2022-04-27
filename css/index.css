@@ -208,40 +208,50 @@ header nav .nav-button {
 }
 .main-container {
   display: flex;
-  padding: 8rem 13rem;
+  padding: 8rem 10rem;
   justify-content: space-between;
 }
 .main-container .main-content-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
-  width: 50%;
+  width: 47.5%;
 }
 .main-container .main-content-container h1 {
-  font-size: 8rem;
-  font-weight: bold;
+  margin-top: auto;
+  font-size: 7.2rem;
+  font-weight: 700;
   color: #151515;
-  border: 1px solid red;
 }
 .main-container .main-content-container span {
-  font-size: 1.8rem;
+  margin-top: auto;
+  font-size: 2.2rem;
+  font-weight: 500;
   color: #686868;
   line-height: 2;
 }
 .main-container .main-content-container .hero-button {
-  color: #151515;
+  margin-top: auto;
+  background-color: #151515;
+  color: #ffffff;
   border: 1px solid #151515;
   border-radius: 10px;
   padding: 1.5rem 2rem;
   cursor: pointer;
   font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.main-container .main-content-container .hero-button:hover {
+  background-color: #ffffff;
+  color: #151515;
 }
 .main-container .main-content-container .client-container {
+  margin-top: auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 .main-container .hero-image {
-  width: 45%;
+  width: 47.5%;
 }
