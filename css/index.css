@@ -141,6 +141,8 @@ header {
   display: flex;
   flex-direction: row;
   padding: 3.2rem 4rem;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 header .main-logo {
   flex-grow: 1;
@@ -208,8 +210,10 @@ header nav .nav-button {
 }
 .main-container {
   display: flex;
-  padding: 8rem 10rem;
   justify-content: space-between;
+  padding: 8rem 10rem;
+  max-width: 140rem;
+  margin: 0 auto;
 }
 .main-container .main-content-container {
   display: flex;
@@ -220,11 +224,26 @@ header nav .nav-button {
 }
 .main-container .main-content-container h1 {
   margin-top: auto;
-  font-size: 7.2rem;
+  font-size: 7.6rem;
   font-weight: 700;
   color: #151515;
 }
-.main-container .main-content-container span {
+.main-container .main-content-container #typewritten {
+  color: #726cee;
+  position: relative;
+  overflow: hidden;
+}
+.main-container .main-content-container #typewritten::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #f2f2f2;
+  border-left: 2px solid #726cee;
+  animation: typing 1.5s steps(5) infinite;
+}
+.main-container .main-content-container .hero-details {
   margin-top: auto;
   font-size: 2.2rem;
   font-weight: 500;
@@ -253,5 +272,13 @@ header nav .nav-button {
   justify-content: space-between;
 }
 .main-container .hero-image {
-  width: 47.5%;
+  height: auto;
+  width: 45%;
+  z-index: 10;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -75px 0 75px;
+  }
 }
