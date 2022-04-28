@@ -9,6 +9,12 @@
   padding: 8rem 10rem;
   max-width: 140rem;
   margin: 0 auto;
+  @media only screen and (max-width: @large) {
+    padding: 5rem;
+  }
+  @media only screen and (max-width: @large-tablet) {
+    flex-direction: column-reverse;
+  }
 
   .main-content-container {
     display: flex;
@@ -16,12 +22,23 @@
     justify-content: space-around;
     align-items: flex-start;
     width: 47.5%;
+    @media only screen and (max-width: @large-tablet) {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
 
     h1 {
       margin-top: auto;
       font-size: @large-text;
       font-weight: 700;
       color: @black;
+      @media only screen and (max-width: @large) {
+        font-size: 5.4rem;
+      }
+      @media only screen and (max-width: @large-tablet) {
+        margin-bottom: 5rem;
+      }
     }
 
     #typewritten {
@@ -47,6 +64,12 @@
       font-weight: 500;
       color: @medium-gray;
       line-height: 2;
+      @media only screen and (max-width: @large-1) {
+        font-size: 1.6rem;
+      }
+      @media only screen and (max-width: @large-tablet) {
+        margin-bottom: 5rem;
+      }
     }
     .hero-button {
       margin-top: auto;
@@ -59,6 +82,13 @@
       font-size: @button-text;
       transition: all 0.3s;
 
+      @media only screen and (max-width: @large-1) {
+        font-size: 1.6rem;
+      }
+      @media only screen and (max-width: @large-tablet) {
+        margin-bottom: 10rem;
+      }
+
       &:hover {
         background-color: @white;
         color: @black;
@@ -70,12 +100,28 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
+      svg {
+        @media only screen and (max-width: @large-1) {
+          transform: scale(0.75);
+        }
+      }
     }
   }
-  .hero-image {
+  .hero-image-desktop {
     height: auto;
     width: 45%;
     z-index: 5;
+    @media only screen and (max-width: @large-tablet) {
+      display: none;
+    }
+  }
+  .hero-image-mobile {
+    display: none;
+    @media only screen and (max-width: @large-tablet) {
+      display: block;
+      width: 100%;
+      margin-bottom: 5rem;
+    }
   }
 }
 

@@ -353,6 +353,16 @@ header nav .navbar-active {
   max-width: 140rem;
   margin: 0 auto;
 }
+@media only screen and (max-width: 1050px) {
+  .main-container {
+    padding: 5rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .main-container {
+    flex-direction: column-reverse;
+  }
+}
 .main-container .main-content-container {
   display: flex;
   flex-direction: column;
@@ -360,11 +370,28 @@ header nav .navbar-active {
   align-items: flex-start;
   width: 47.5%;
 }
+@media only screen and (max-width: 850px) {
+  .main-container .main-content-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .main-container .main-content-container h1 {
   margin-top: auto;
   font-size: 6.4rem;
   font-weight: 700;
   color: #151515;
+}
+@media only screen and (max-width: 1050px) {
+  .main-container .main-content-container h1 {
+    font-size: 5.4rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .main-container .main-content-container h1 {
+    margin-bottom: 5rem;
+  }
 }
 .main-container .main-content-container #typewritten {
   color: #726cee;
@@ -388,6 +415,16 @@ header nav .navbar-active {
   color: #686868;
   line-height: 2;
 }
+@media only screen and (max-width: 1000px) {
+  .main-container .main-content-container .hero-details {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .main-container .main-content-container .hero-details {
+    margin-bottom: 5rem;
+  }
+}
 .main-container .main-content-container .hero-button {
   margin-top: auto;
   background-color: #151515;
@@ -399,6 +436,16 @@ header nav .navbar-active {
   font-size: 1.8rem;
   transition: all 0.3s;
 }
+@media only screen and (max-width: 1000px) {
+  .main-container .main-content-container .hero-button {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .main-container .main-content-container .hero-button {
+    margin-bottom: 10rem;
+  }
+}
 .main-container .main-content-container .hero-button:hover {
   background-color: #ffffff;
   color: #151515;
@@ -409,10 +456,30 @@ header nav .navbar-active {
   display: flex;
   justify-content: space-between;
 }
-.main-container .hero-image {
+@media only screen and (max-width: 1000px) {
+  .main-container .main-content-container .client-container svg {
+    transform: scale(0.75);
+  }
+}
+.main-container .hero-image-desktop {
   height: auto;
   width: 45%;
   z-index: 5;
+}
+@media only screen and (max-width: 850px) {
+  .main-container .hero-image-desktop {
+    display: none;
+  }
+}
+.main-container .hero-image-mobile {
+  display: none;
+}
+@media only screen and (max-width: 850px) {
+  .main-container .hero-image-mobile {
+    display: block;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
 }
 @keyframes typing {
   100% {
