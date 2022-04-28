@@ -16,3 +16,15 @@ document.addEventListener("click", (e) => {
   });
   console.log(currentDropdown.classList);
 });
+
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const nav = document.querySelector(".nav-items-container");
+
+function navigationSlider() {
+  hamburgerMenu.addEventListener("click", () => {
+    nav.classList.toggle("navbar-active");
+    hamburgerMenu.classList.toggle("toggle");
+  });
+}
+
+navigationSlider();
